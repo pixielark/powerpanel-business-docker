@@ -89,7 +89,7 @@ ports:
 ## Tags
 
 There are two versions available: `local` and `remote`.
-See the [User Manual](https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower-UM-PPB-470.pdf)
+See the [User Manual](https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower-UM-PPB-Management-447.pdf)
 for the difference between them.
 
 ### Specific Versions
