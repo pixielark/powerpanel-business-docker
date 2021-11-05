@@ -47,6 +47,21 @@ spawn ./ppb-linux-x86_64.sh
 match_max 100000
 expect -exact "Unpacking JRE ...\r
 Starting Installer ...\r
+[?7hPlease select a language:\r
+1: Chinese (Simplified)\r
+2: Chinese (Traditional)\r
+3: Croatian\r
+4: Czech\r
+5: English \[Enter\]\r
+6: French\r
+7: German\r
+8: Japanese\r
+9: Polish\r
+10: Spanish\r
+\[1 - 10\]\r
+"
+send -- "\r"
+expect -exact "\r
 \[?7hThis will install CyberPower PowerPanel Business on your computer.\r
 OK \[o, Enter\], Cancel \[c\]\r
 "

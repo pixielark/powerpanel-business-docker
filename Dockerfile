@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV POWERPANEL_VERSION=440
+ENV POWERPANEL_VERSION=470
 
 RUN apt-get update && apt-get install -y \
       curl \
@@ -29,22 +29,22 @@ ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name="nathanvaughn/powerpanel-business" \
+      org.label-schema.name="pixielark/powerpanel-business" \
       org.label-schema.description="Docker image for PowerPanel Business" \
       org.label-schema.license="MIT" \
-      org.label-schema.url="https://github.com/nathanvaughn/powerpanel-business-docker" \
-      org.label-schema.vendor="nathanvaughn" \
+      org.label-schema.url="https://github.com/pixielark/powerpanel-business-docker" \
+      org.label-schema.vendor="pixielark" \
       org.label-schema.version=$POWERPANEL_VERSION \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/nathanvaughn/powerpanel-business-docker.git" \
+      org.label-schema.vcs-url="https://github.com/pixielark/powerpanel-business-docker.git" \
       org.label-schema.vcs-type="Git" \
       org.opencontainers.image.created=$BUILD_DATE \
-      org.opencontainers.image.title="nathanvaughn/powerpanel-business" \
+      org.opencontainers.image.title="pixielark/powerpanel-business" \
       org.opencontainers.image.description="Docker image for PowerPanel Business" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.url="https://github.com/nathanvaughn/powerpanel-business-docker" \
-      org.opencontainers.image.authors="Nathan Vaughn" \
-      org.opencontainers.image.vendor="nathanvaughn" \
+      org.opencontainers.image.url="https://github.com/pixielark/powerpanel-business-docker" \
+      org.opencontainers.image.authors="pixielark" \
+      org.opencontainers.image.vendor="pixielark" \
       org.opencontainers.image.version=$POWERPANEL_VERSION \
       org.opencontainers.image.revision=$VCS_REF \
-      org.opencontainers.image.source="https://github.com/nathanvaughn/powerpanel-business-docker.git"
+      org.opencontainers.image.source="https://github.com/pixielark/powerpanel-business-docker.git"

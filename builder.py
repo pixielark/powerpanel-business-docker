@@ -2,9 +2,7 @@ import subprocess
 
 VARIANTS = ["local", "remote"]
 IMAGES = [
-    "docker.io/nathanvaughn/powerpanel-business",
-    "ghcr.io/nathanvaughn/powerpanel-business",
-    "cr.nthnv.me/powerpanel-business",
+    "pixielark/powerpanel-business",
 ]
 
 

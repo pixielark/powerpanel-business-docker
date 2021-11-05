@@ -89,7 +89,7 @@ ports:
 ## Tags
 
 There are two versions available: `local` and `remote`.
-See the [User Manual](https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower-UM-PPB-440.pdf)
+See the [User Manual](https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower-UM-PPB-470.pdf)
 for the difference between them.
 
 ### Specific Versions
@@ -97,7 +97,7 @@ for the difference between them.
 Example:
 
 ```yml
-image: ghcr.io/nathanvaughn/powerpanel-business:local-440
+image: docker.io/pixielark/powerpanel-business:local-470
 ```
 
 ### Latest
@@ -105,13 +105,11 @@ image: ghcr.io/nathanvaughn/powerpanel-business:local-440
 Example:
 
 ```yml
-image: ghcr.io/nathanvaughn/powerpanel-business:remote-latest
+image: docker.io/pixielark/powerpanel-business:remote-latest
 ```
 
 ## Registry
 
 This image is available from 2 different registries. Choose whichever you want:
 
- - [docker.io/nathanvaughn/powerpanel-business](https://hub.docker.com/r/nathanvaughn/powerpanel-business)
- - [ghcr.io/nathanvaughn/powerpanel-business](https://github.com/users/nathanvaughn/packages/container/package/powerpanel-business)
- - [cr.nthnv.me/powerpanel-business](https://cr.nthnv.me/repository/library/powerpanel-business) (experimental)
+ - [docker.io/pixielark/powerpanel-business](https://hub.docker.com/r/pixielark/powerpanel-business)
