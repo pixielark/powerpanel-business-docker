@@ -1,0 +1,15 @@
+curl -s -L https://dl4jz3rbrsfum.cloudfront.net/software/ppb470-linux-x86_x64.sh  -o ppb-linux-x86_64.sh && chmod +x ppb-linux-x86_64.sh
+
+
+docker run --rm -it --entrypoint bash ba6acccedd29
+
+SHELL=bash autoexpect
+SHELL=bash expect
+
+docker cp f8a39a7de8bf:/script.exp .
+
+
+export COMPOSE_DOCKER_CLI_BUILD=1
+
+export DOCKER_BUILDKIT=1
+
