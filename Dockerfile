@@ -23,7 +23,7 @@ EXPOSE 53568
 VOLUME ["/usr/local/ppbe/db_local/"]
 
 HEALTHCHECK CMD curl -vs --fail http://127.0.0.1:3052/ || exit 1
-ENTRYPOINT ["/usr/local/ppbe/ppbed", "run"]
+ENTRYPOINT ["/usr/local/PPB/ppbed", "run"]
 
 ARG BUILD_DATE
 ARG VCS_REF
