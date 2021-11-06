@@ -299,5 +299,5 @@ Which components should be installed?\r
 2: Remote\r
 Please enter a comma-separated list of the selected values or \[Enter\] for the default selection:\r
 "
-send -- "1\r"
+send -- "2\r"
 expect eof
