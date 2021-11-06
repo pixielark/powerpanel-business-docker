@@ -10,10 +10,15 @@ RUN apt-get update && apt-get install -y \
       usb.ids \
       usbutils \
       expect \
+      tzdata \
       --no-install-recommends \
       && rm -rf /var/lib/apt/lists/*
 RUN curl -s -L https://dl4jz3rbrsfum.cloudfront.net/software/ppb${POWERPANEL_VERSION}-linux-x86_x64.sh -o ppb-linux-x86_64.sh \
  && chmod +x ppb-linux-x86_64.sh
+
+RUN \
+        ln -fs /usr/share/zoneinfo/America/Vancouver /etc/localtime && \
+        dpkg-reconfigure -f noninteractive tzdata
 
 COPY --from=copier install.exp install.exp
 RUN chmod +x install.exp && expect ./install.exp && rm ppb-linux-x86_64.sh && rm install.exp
